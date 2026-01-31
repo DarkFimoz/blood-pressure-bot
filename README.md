@@ -2,6 +2,9 @@
 
 Интеллектуальный бот для мониторинга и анализа артериального давления с учетом индивидуальных факторов здоровья.
 
+**GitHub:** [https://github.com/DarkFimoz/blood-pressure-bot](https://github.com/DarkFimoz/blood-pressure-bot)  
+**Автор:** [DarkFimoz](https://github.com/DarkFimoz)
+
 ## 📋 Функционал
 
 - ✅ Сбор антропометрических данных (рост, вес, возраст, пол)
@@ -14,7 +17,7 @@
 - ✅ Персонализированные рекомендации
 - ✅ Валидация введенных данных
 
-## 🚀 Локальная установка
+## 🚀 Установка и запуск
 
 ### Требования
 - Python 3.8+
@@ -24,7 +27,7 @@
 
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/ваш-username/blood-pressure-bot.git
+git clone https://github.com/DarkFimoz/blood-pressure-bot.git
 cd blood-pressure-bot
 ```
 
@@ -35,7 +38,7 @@ pip install -r requirements.txt
 
 3. Создайте бота через [@BotFather](https://t.me/BotFather) в Telegram и получите токен
 
-4. Создайте файл `.env` на основе `.env.example`:
+4. Создайте файл `.env`:
 ```bash
 copy .env.example .env
 ```
@@ -48,122 +51,6 @@ TELEGRAM_BOT_TOKEN=ваш_токен_здесь
 6. Запустите бота:
 ```bash
 python bot.py
-```
-
-## 🌐 Деплой на сервер
-
-### Вариант 1: VPS (Ubuntu/Debian)
-
-1. Подключитесь к серверу:
-```bash
-ssh user@your-server-ip
-```
-
-2. Установите Python и git:
-```bash
-sudo apt update
-sudo apt install python3 python3-pip git -y
-```
-
-3. Клонируйте репозиторий:
-```bash
-git clone https://github.com/ваш-username/blood-pressure-bot.git
-cd blood-pressure-bot
-```
-
-4. Установите зависимости:
-```bash
-pip3 install -r requirements.txt
-```
-
-5. Создайте файл `.env` с токеном:
-```bash
-nano .env
-```
-Добавьте: `TELEGRAM_BOT_TOKEN=ваш_токен`
-
-6. Запустите бота в фоновом режиме с помощью systemd:
-```bash
-sudo nano /etc/systemd/system/bp-bot.service
-```
-
-Добавьте:
-```ini
-[Unit]
-Description=Blood Pressure Telegram Bot
-After=network.target
-
-[Service]
-Type=simple
-User=your-username
-WorkingDirectory=/home/your-username/blood-pressure-bot
-ExecStart=/usr/bin/python3 /home/your-username/blood-pressure-bot/bot.py
-Restart=always
-RestartSec=10
-
-[Install]
-WantedBy=multi-user.target
-```
-
-7. Запустите сервис:
-```bash
-sudo systemctl daemon-reload
-sudo systemctl enable bp-bot
-sudo systemctl start bp-bot
-sudo systemctl status bp-bot
-```
-
-### Вариант 2: Heroku
-
-1. Создайте `Procfile`:
-```
-worker: python bot.py
-```
-
-2. Установите Heroku CLI и войдите:
-```bash
-heroku login
-```
-
-3. Создайте приложение:
-```bash
-heroku create your-bp-bot
-```
-
-4. Установите переменную окружения:
-```bash
-heroku config:set TELEGRAM_BOT_TOKEN=ваш_токен
-```
-
-5. Задеплойте:
-```bash
-git push heroku main
-```
-
-6. Запустите worker:
-```bash
-heroku ps:scale worker=1
-```
-
-### Вариант 3: PythonAnywhere
-
-1. Зарегистрируйтесь на [PythonAnywhere](https://www.pythonanywhere.com)
-2. Откройте Bash консоль
-3. Клонируйте репозиторий и установите зависимости
-4. Создайте файл `.env` с токеном
-5. В разделе "Tasks" создайте задачу, которая запускает `python3 /home/username/blood-pressure-bot/bot.py`
-
-### Вариант 4: Docker
-
-1. Создайте `Dockerfile` (уже включен в проект)
-2. Соберите образ:
-```bash
-docker build -t bp-bot .
-```
-
-3. Запустите контейнер:
-```bash
-docker run -d --name bp-bot --env-file .env bp-bot
 ```
 
 ## 📱 Использование
@@ -200,4 +87,10 @@ MIT License
 
 ## 👨‍💻 Автор
 
-Ваше имя
+**DarkFimoz**  
+GitHub: [https://github.com/DarkFimoz](https://github.com/DarkFimoz)
+
+## 🔗 Ссылки
+
+- Репозиторий: [https://github.com/DarkFimoz/blood-pressure-bot](https://github.com/DarkFimoz/blood-pressure-bot)
+- Telegram Bot API: [https://core.telegram.org/bots/api](https://core.telegram.org/bots/api)
