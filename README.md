@@ -93,4 +93,4 @@ GitHub: [https://github.com/DarkFimoz](https://github.com/DarkFimoz)
 ## 🔗 Ссылки
 
 - Репозиторий: [https://github.com/DarkFimoz/blood-pressure-bot](https://github.com/DarkFimoz/blood-pressure-bot)
-- Telegram Bot API: [https://core.telegram.org/bots/api](https://core.telegram.org/bots/api)
+- Telegram Bot: [https://t.me/analysePbot](https://t.me/analysePbot)
