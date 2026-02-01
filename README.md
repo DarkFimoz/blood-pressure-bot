@@ -3,7 +3,9 @@
 Интеллектуальный бот для мониторинга и анализа артериального давления с учетом индивидуальных факторов здоровья.
 
 **GitHub:** [https://github.com/DarkFimoz/blood-pressure-bot](https://github.com/DarkFimoz/blood-pressure-bot)  
-**Автор:** [DarkFimoz](https://github.com/DarkFimoz)
+**Автор:** [DarkFimoz](https://github.com/DarkFimoz) 
+
+**Комментарий автора:** ЗХВАЗХВАХЗХЗВАХВАЗХВХЗЗАВЗХВАЗХХЗВА ЧТО Я ТВОРЮ И КОМУ ЭТО НАДО
 
 ## 📋 Функционал
 
